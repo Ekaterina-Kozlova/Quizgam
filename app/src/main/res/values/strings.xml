@@ -3,4 +3,7 @@
     <string name="th_geografy">География</string>
     <string name="th_literatura">Литература</string>
     <string name="th_kino">Киномотограф</string>
-    </resources>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
