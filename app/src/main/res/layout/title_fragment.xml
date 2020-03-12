@@ -2,9 +2,29 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <LinearLayout
-        android:id="@+id/fragment_title"
+        android:id="@+id/title_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/background_main"
-        android:orientation="vertical"/>
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="300sp"
+            android:text="@string/text_start"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="50sp"
+            android:text="@string/play" />
+    </LinearLayout>
 </layout>

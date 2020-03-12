@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/finish_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    tools:context=".FinishFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/text_result_const"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginBottom="50sp"
+        android:text="@string/text_result"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/text_result_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:text="Результат1"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+
+</FrameLayout>
