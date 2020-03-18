@@ -11,9 +11,7 @@ import androidx.navigation.findNavController
 import com.example.quizgame.databinding.ActivityMainBinding
 import com.example.quizgame.databinding.TitleFragmentBinding
 
-/**
- * A simple [Fragment] subclass.
- */
+
 private lateinit var binding: ActivityMainBinding
 
 class TitleFragment : Fragment() {

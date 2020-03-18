@@ -1,49 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ThemeFragment">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- TODO: Update blank fragment layout -->
-
-    <TextView
+    <LinearLayout
         android:id="@+id/theme_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background_main" />
+        android:background="@drawable/background_main"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/text_theme"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200sp"
-        android:text="@string/chose_theme"
-        android:textAlignment="center"
-        android:textColor="@android:color/background_light"
-        android:textSize="24sp" />
+        <TextView
+            android:id="@+id/text_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200sp"
+            android:text="@string/chose_theme"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
 
-    <Button
-        android:id="@+id/btn_geography"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|center_vertical"
-        android:text="@string/th_geografy" />
+        <Button
+            android:id="@+id/btn_geography"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="@string/th_geografy" />
 
-    <Button
-        android:id="@+id/btn_kino"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|center_vertical"
-        android:layout_marginTop="75sp"
-        android:text="@string/th_kino" />
+        <Button
+            android:id="@+id/btn_kino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="75sp"
+            android:text="@string/th_kino" />
 
-    <Button
-        android:id="@+id/btn_literature"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|center_vertical"
-        android:layout_marginTop="150sp"
-        android:text="@string/th_literature" />
-
-</FrameLayout>
+        <Button
+            android:id="@+id/btn_literature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="150sp"
+            android:text="@string/th_literature" />
+    </LinearLayout>
+</layout>

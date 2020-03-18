@@ -1,67 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".GameFragment">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.android.navigation.GameFragment">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".GameFragment">
 
+    <data>
+        <variable
+            name="game"
+            type="com.example.quizgame.GameFragment"/>
+    </data>
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:id="@+id/game_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/background_main"
+        android:orientation="vertical"
+
         android:text="@{game.currentQuestion.text}"
-        tools:text="@{game.currentQuestion.text}" />
+        tools:text="@{game.currentQuestion.text}" >
 
-    <TextView
-        android:id="@+id/text_question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|center_vertical"
-        android:layout_marginBottom="180sp"
-        android:text="Вопрос1"
-        android:textColor="@android:color/background_light"
-        android:textSize="24sp" />
+        <TextView
+            android:id="@+id/text_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="180sp"
+            android:text="Вопрос1"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
 
-    <Button
-        android:id="@+id/btn_answer4"
-        android:layout_width="160dp"
-        android:layout_height="130dp"
-        android:layout_gravity="right|center_vertical"
-        android:layout_marginTop="200sp"
-        android:layout_marginRight="30sp"
-        android:text="Button4" />
+        <Button
+            android:id="@+id/btn_answer4"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginTop="200sp"
+            android:layout_marginRight="30sp"
+            android:text="Button4" />
 
-    <Button
-        android:id="@+id/btn_answer3"
-        android:layout_width="160dp"
-        android:layout_height="130dp"
-        android:layout_gravity="center_vertical"
-        android:layout_marginLeft="30sp"
-        android:layout_marginTop="200sp"
-        android:text="Button3" />
+        <Button
+            android:id="@+id/btn_answer3"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="200sp"
+            android:text="Button3" />
 
-    <Button
-        android:id="@+id/btn_answer2"
-        android:layout_width="160dp"
-        android:layout_height="130dp"
-        android:layout_gravity="right|center_vertical"
-        android:layout_marginTop="50sp"
-        android:layout_marginRight="30sp"
-        android:text="Button2" />
+        <Button
+            android:id="@+id/btn_answer2"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginTop="50sp"
+            android:layout_marginRight="30sp"
+            android:text="Button2" />
 
-    <Button
-        android:id="@+id/btn_answer1"
-        android:layout_width="160dp"
-        android:layout_height="130dp"
-        android:layout_gravity="center_vertical"
-        android:layout_marginLeft="30sp"
-        android:layout_marginTop="50sp"
-        android:text="Button1" />
+        <Button
+            android:id="@+id/btn_answer1"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="50sp"
+            android:text="Button1" />
 
+    </ScrollView>
 
-</FrameLayout>
+</layout>

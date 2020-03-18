@@ -4,26 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation.xml"
     app:startDestination="@id/titleFragment">
-
-    <fragment
-        android:id="@+id/finishFragment"
-        android:name="com.example.quizgame.FinishFragment"
-        android:label="finish_fragment"
-        tools:layout="@layout/finish_fragment" />
-    <fragment
-        android:id="@+id/themeFragment"
-        android:name="com.example.quizgame.ThemeFragment"
-        android:label="theme_fragment"
-        tools:layout="@layout/theme_fragment" >
-        <action
-            android:id="@+id/action_themeFragment_to_gameFragment"
-            app:destination="@id/gameFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/gameFragment"
-        android:name="com.example.quizgame.GameFragment"
-        android:label="game_fragment"
-        tools:layout="@layout/game_fragment" />
     <fragment
         android:id="@+id/titleFragment"
         android:name="com.example.quizgame.TitleFragment"
@@ -32,4 +12,36 @@
             android:id="@+id/action_titleFragment_to_themeFragment"
             app:destination="@id/themeFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/themeFragment"
+        android:name="com.example.quizgame.ThemeFragment"
+        android:label="theme_fragment"
+        tools:layout="@layout/theme_fragment" >
+        <action
+            android:id="@+id/action_themeFragment_to_quizFragment2"
+            app:destination="@id/quizFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment2"
+        android:name="com.example.quizgame.QuizFragment"
+        android:label="quiz_fragment"
+        tools:layout="@layout/quiz_fragment" >
+        <action
+            android:id="@+id/action_quizFragment2_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.quizgame.GameFragment"
+        android:label="game_fragment"
+        tools:layout="@layout/game_fragment" >
+        <action
+            android:id="@+id/action_gameFragment_to_finishFragment2"
+            app:destination="@id/finishFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finishFragment"
+        android:name="com.example.quizgame.FinishFragment"
+        android:label="finish_fragment"
+        tools:layout="@layout/finish_fragment" />
 </navigation>

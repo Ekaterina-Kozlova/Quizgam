@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import com.example.quizgame.databinding.GameFragmentBinding
 
 
 class GameFragment : Fragment() {
@@ -47,8 +49,11 @@ class GameFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+        val binding:GameFragmentBinding = DataBindingUtil.inflate(
+            inflater, R.layout.game_fragment,container,false)
         return inflater.inflate(R.layout.game_fragment, container, false)
         currentQuestion = questions[1]
+
     }
 
 
