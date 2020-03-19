@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation.xml"
     app:startDestination="@id/titleFragment">
+
     <fragment
         android:id="@+id/titleFragment"
         android:name="com.example.quizgame.TitleFragment"
@@ -15,19 +16,17 @@
     <fragment
         android:id="@+id/themeFragment"
         android:name="com.example.quizgame.ThemeFragment"
-        android:label="theme_fragment"
-        tools:layout="@layout/theme_fragment" >
+        android:label="ThemeFragment" >
         <action
-            android:id="@+id/action_themeFragment_to_quizFragment2"
-            app:destination="@id/quizFragment2" />
+            android:id="@+id/action_themeFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
     </fragment>
     <fragment
-        android:id="@+id/quizFragment2"
+        android:id="@+id/quizFragment"
         android:name="com.example.quizgame.QuizFragment"
-        android:label="quiz_fragment"
-        tools:layout="@layout/quiz_fragment" >
+        android:label="QuizFragment" >
         <action
-            android:id="@+id/action_quizFragment2_to_gameFragment"
+            android:id="@+id/action_quizFragment_to_gameFragment"
             app:destination="@id/gameFragment" />
     </fragment>
     <fragment
@@ -36,7 +35,7 @@
         android:label="game_fragment"
         tools:layout="@layout/game_fragment" >
         <action
-            android:id="@+id/action_gameFragment_to_finishFragment2"
+            android:id="@+id/action_gameFragment_to_finishFragment"
             app:destination="@id/finishFragment" />
     </fragment>
     <fragment

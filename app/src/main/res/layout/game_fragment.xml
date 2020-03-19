@@ -4,21 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".GameFragment">
 
-    <data>
-        <variable
-            name="game"
-            type="com.example.quizgame.GameFragment"/>
-    </data>
-
     <ScrollView
         android:id="@+id/game_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/background_main"
-        android:orientation="vertical"
+        android:orientation="vertical">
 
-        android:text="@{game.currentQuestion.text}"
-        tools:text="@{game.currentQuestion.text}" >
+        //android:text="@{game.currentQuestion.text}"
+        //tools:text="@{game.currentQuestion.text}" >
 
         <TextView
             android:id="@+id/text_question"
